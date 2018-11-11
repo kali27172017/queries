@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.headerUser{
+     background:#442AD8;
+     padding:.7em .6em;
+     display:grid;
+     grid-template-columns: 780px 300px;
+     align-items:center;
+}
+
+
+.navUser{
+    border:1px solid red;
+    width:450px;
+    display:grid;
+    grid-template-columns:150px 300px;
+    align-items:center;
+}
