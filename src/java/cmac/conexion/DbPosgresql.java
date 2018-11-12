@@ -10,8 +10,8 @@ public class DbPosgresql {
     
     Connection cn = null;
     private String url  = "jdbc:postgresql://localhost/queries";
-    private String usuario  = "jorge";
-    private String clave = "12345";
+    private String usuario  = "postgres";
+    private String clave = "postgres";
     
     
     public DbPosgresql() throws SQLException{
