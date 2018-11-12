@@ -5,10 +5,22 @@
  */
 package cmac.repository;
 
+import cmac.conexion.DbPosgresql;
+import java.sql.Statement;
+
 /**
  *
  * @author jorge
  */
-public class UserRepository {
+public class UserRepository extends DbPosgresql{
+    
+     Statement stmt  = null;
+    
+     public Boolean verifyLogin(String usuario,String clave){
+         String sql  = "SELECT  * FROM user WHERE usuario = ? ";
+         
+         return null;
+         
+     }
     
 }

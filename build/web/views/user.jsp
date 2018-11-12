@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Usuario</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
          <link rel="stylesheet" href="css/user.css" type="text/css"/>
          <link rel="stylesheet" href="css/iconos.css" type="text/css"/>
     </head>
@@ -21,7 +22,9 @@
                 
                 <div class="iconUser">
                   <span class="icon-user"></span>
-                  <a href="#" class="icon-arrow-down"></a>
+                  <span>
+                      <a href="#" class="icon-arrow-down"></a>
+                  </span>    
                   <span class="icon-bell"></span>
                 </div>
                                 
@@ -31,5 +34,80 @@
                 </form>
             </nav>
         </header>
+        
+        <div class="headerTitle">
+            <h3>Solicitudes de Informacion de las Distintas Areas de la
+               Caja Piura
+            </h3>
+        </div>
+        
+        <section class="user">
+            
+            <div class="userRow">
+              <div class="userRowSection">
+                 <div>
+                      <span class="icon-draugiem-dot-lv"></span>
+                  </div>
+                  <div>
+                      <h5>AHORROS</h5>
+                      <a href="#">10 Consultas</a>
+                  </div>
+              </div>
+                
+              <div class="userRowSection">
+                  <div>
+                      <span class="icon-draugiem-dot-lv"></span>
+                  </div>
+                  <div>
+                      <h5>CREDITOS</h5>
+                      <a href="#">10 Consultas</a>
+                  </div>
+              </div>
+                
+              <div class="userRowSection">
+                 <div>
+                      <span class="icon-draugiem-dot-lv"></span>
+                  </div>
+                  <div>
+                      <h5>CONTROL OPERATIVO</h5>
+                      <a href="#">10 Consultas</a>
+                  </div>
+              </div>
+           </div>
+            
+            <div class="userRow">
+              <div class="userRowSection">
+                  <div>
+                      <span class="icon-draugiem-dot-lv"></span>
+                  </div>
+                  <div>
+                      <h5>AUDITORIA</h5>
+                      <a href="#">10 Consultas</a>
+                  </div>
+              </div>
+                
+              <div class="userRowSection">
+                  <div>
+                      <span class="icon-draugiem-dot-lv"></span>
+                  </div>
+                  <div>
+                      <h5>PRENDARIO</h5>
+                      <a href="#">10 Consultas</a>
+                  </div>
+              </div>
+                
+              <div class="userRowSection">
+                 <div>
+                      <span class="icon-draugiem-dot-lv"></span>
+                  </div>
+                  <div>
+                      <h5>SEGURIDAD</h5>
+                      <a href="#">10 Consultas</a>
+                  </div>
+              </div>
+           </div> 
+            
+          
+        </section>
     </body>
 </html>

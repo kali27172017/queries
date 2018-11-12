@@ -18,7 +18,7 @@
             <div class="main-rigth">
                 <fieldset>
                     <legend>Iniciar Sesion</legend>
-                    <form class="main-rigthForm" action="" method="post">
+                    <form class="main-rigthForm" action="/user" method="post">
                         <p>
                             <label for="usuario">Usuario:</label>
                             <input type="text" name="usuario" id="usuario" required/>
