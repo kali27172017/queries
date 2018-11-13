@@ -5,13 +5,16 @@
  */
 package cmac.controllers;
 
+
+import cmac.models.Usuario;
+import cmac.repository.UserRepository;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 
 /**
  *
@@ -65,7 +68,14 @@ public class UserController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
+        String  usuario  = request.getParameter("usuario");
+        String  clave    =   request.getParameter("clave");
+        UserRepository userRepo = new UserRepository();
+        userRepo.verifyLogin(usuario,clave);
+        
+        //System.out.println(user);
+        
     }
 
     /**

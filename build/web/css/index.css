@@ -6,7 +6,7 @@ body{
 
 
 .header{
-    background:#442AD8;
+    background:#00549f;
     padding:.5em;
 }
 
@@ -21,7 +21,7 @@ body{
 
 
     .main-left{
-        border-right:2px solid #442AD8;
+        border-right:2px solid #00549f;
     }
     
     
@@ -37,7 +37,7 @@ body{
     .main-rigth legend{
         font-family: 'Roboto', sans-serif;
         font-size:18px;
-        color:#442AD8;
+        color:#00549f;
         font-weight:bold;
     }
     
@@ -66,7 +66,7 @@ body{
             border:0;
             font-family: 'Roboto', sans-serif;
             font-size:15px;
-            background:#442AD8;
+            background:#00549f;
             color:white;
     }
     
@@ -78,13 +78,12 @@ body{
 
 
 
-
-
-
-
+    /*
+    146847361
+j3xu62
+    */
 
 
 
 
   
-

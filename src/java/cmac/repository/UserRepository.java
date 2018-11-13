@@ -5,10 +5,20 @@
  */
 package cmac.repository;
 
-/**
- *
- * @author jorge
- */
+import cmac.models.Usuario;
+
+
+
+
+
 public class UserRepository {
     
-}
+   
+     public Usuario verifyLogin(String usuario,String clave) {
+          String sql  = "SELECT  * FROM user where usuario = ? ";
+          
+          
+         
+     }
+    
+   }

@@ -14,6 +14,5 @@ import java.sql.SQLException;
 public class prueba {
    public static void main(String [] args) throws SQLException{
        DbPosgresql  cn  = new DbPosgresql();
-       cn.postgresql();
-   }   
+      }   
 }

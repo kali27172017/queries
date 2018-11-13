@@ -8,29 +8,37 @@ import java.sql.SQLException;
 
 public class DbPosgresql {
     
-    Connection cn = null;
-    private String url  = "jdbc:postgresql://localhost/queries";
-    private String usuario  = "postgres";
-    private String clave = "postgres";
     
+    private static final String driver = "org.postgresql.Driver";
+    private static final String url = "jdbc:postgresql://localhost:5432/queries";
+    private static final String usuario  = "postgres";
+    private static final String clave = "postgres";
+    static Connection cn;
     
-    public DbPosgresql() throws SQLException{
-        try{
-          cn  = DriverManager.getConnection(url, usuario,clave);
-          if(cn!=null){
-              System.out.println("Conexion exitosa");
-          }
-        }catch(SQLException ex){
-            ex.printStackTrace();
-        }finally{
-            if(cn!=null && !cn.isClosed()){
-                cn.close();
-            }
+   
+      
+    public static Connection getConnection() {
+        try {
+            Class.forName(driver);
+            return DriverManager.getConnection(url, usuario, clave);
+        } catch (ClassNotFoundException | SQLException ex) {
+            return null;
         }
     }
+
+ 
     
     
-    public Connection postgresql(){
-        return this.cn;
+    public static void closeConnection(Connection con) {
+        if (con != null) {
+            try {
+                con.close();
+            } catch (SQLException ex) {
+                System.err.println("Erro: " + ex);
+            }
+        }
+      }
+
+ 
     }
-}
+
